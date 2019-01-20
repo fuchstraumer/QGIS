@@ -28,6 +28,7 @@ else(QCA_INCLUDE_DIR AND QCA_LIBRARY)
       ${LIB_DIR}
       $ENV{LIB}
       "$ENV{LIB_DIR}"
+      "$ENV{OSGEO4W_ROOT}/apps/Qt5/lib"
       /usr/local/lib
   )
 
@@ -42,6 +43,7 @@ else(QCA_INCLUDE_DIR AND QCA_LIBRARY)
       "${_qca_fw}/Headers"
       ${LIB_DIR}/include
       "$ENV{LIB_DIR}/include"
+      "$ENV{OSGEO4W_ROOT}/apps/Qt5/include"
       $ENV{INCLUDE}
       /usr/local/include
       PATH_SUFFIXES QtCrypto qt5/QtCrypto Qca-qt5/QtCrypto qt/Qca-qt5/QtCrypto

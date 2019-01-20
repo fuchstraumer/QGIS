@@ -18,6 +18,7 @@ FIND_PATH(QTKEYCHAIN_INCLUDE_DIR keychain.h
   PATHS
   ${LIB_DIR}/include
   "$ENV{LIB_DIR}/include"
+  "$ENV{OSGEO4W_ROOT}/apps/Qt5/include"
   $ENV{INCLUDE}
   /usr/local/include
   /usr/include
@@ -28,6 +29,7 @@ FIND_LIBRARY(QTKEYCHAIN_LIBRARY NAMES qt5keychain qtkeychain
   PATHS
   ${LIB_DIR}
   "$ENV{LIB_DIR}"
+  "$ENV{OSGEO4W_ROOT}/apps/Qt5/lib"
   $ENV{LIB}
   /usr/local/lib
   /usr/lib

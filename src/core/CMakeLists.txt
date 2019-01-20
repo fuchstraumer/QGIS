@@ -1343,7 +1343,7 @@ ADD_DEPENDENCIES(qgis_core version)
 
 # because of htonl
 IF (WIN32)
-  FIND_LIBRARY(SETUPAPI_LIBRARY NAMES setupapi PATHS $ENV{LIB})
+  FIND_LIBRARY(SETUPAPI_LIBRARY NAMES setupapi PATHS $ENV{LIB} "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x64")
   TARGET_LINK_LIBRARIES(qgis_core wsock32 ${SETUPAPI_LIBRARY} dbghelp)
 ENDIF (WIN32)
 

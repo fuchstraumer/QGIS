@@ -22,6 +22,7 @@ find_library(QWT_LIBRARY
     /usr/local/lib/qt5
     "$ENV{LIB_DIR}/lib"
     "$ENV{LIB}"
+    "$ENV{OSGEO4W_ROOT}/apps/Qt5/lib"
 )
 
 set(_qwt_fw)
@@ -35,6 +36,7 @@ FIND_PATH(QWT_INCLUDE_DIR NAMES qwt.h PATHS
   /usr/local/include
   /usr/local/include/qt5
   "$ENV{LIB_DIR}/include"
+  "$ENV{OSGEO4W_ROOT}/apps/Qt5/include"
   "$ENV{INCLUDE}"
   PATH_SUFFIXES qwt-qt5 qwt qwt6
 )

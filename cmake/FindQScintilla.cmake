@@ -38,6 +38,7 @@ ELSE(EXISTS QSCINTILLA_VERSION_STR)
     NAMES ${QSCINTILLA_LIBRARY_NAMES}
     PATHS
       "${QT_LIBRARY_DIR}"
+      "$ENV{OSGEO4W_ROOT}/apps/Qt5/lib"
       /usr/local/lib
       /usr/local/lib/qt5
       /usr/lib
@@ -54,6 +55,7 @@ ELSE(EXISTS QSCINTILLA_VERSION_STR)
       "${_qsci_fw}/Headers"
       ${Qt5Core_INCLUDE_DIRS}
       "${QT_INCLUDE_DIR}"
+      "$ENV{OSGEO4W_ROOT}/apps/Qt5/include"
       /usr/local/include
       /usr/include
     PATH_SUFFIXES qt

@@ -26,6 +26,7 @@ IF(WIN32)
     FIND_PATH(GEOS_INCLUDE_DIR geos_c.h $ENV{LIB_DIR}/include $ENV{INCLUDE})
     FIND_LIBRARY(GEOS_LIBRARY NAMES geos geos_c_i geos_c PATHS
       "$ENV{LIB_DIR}/lib"
+      "$ENV{OSGEO4W_ROOT}/lib"
       $ENV{LIB}
       )
   ENDIF (MSVC)
